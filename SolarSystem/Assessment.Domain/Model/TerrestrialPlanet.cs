@@ -1,6 +1,6 @@
 namespace Assessment.Domain.Model;
 
-public sealed class TerrestrialPlanet : Planet, IHabitable
+public sealed class TerrestrialPlanet : Planet, IHabitable, ICanBeTerraformed
 {
     public bool HasWater {get;set;}
     public TerrestrialPlanet(CelestialBody star) : base(star)
