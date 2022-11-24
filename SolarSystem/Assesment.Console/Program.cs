@@ -93,6 +93,7 @@ solarSystem.AddCelestialBody(nix);
 solarSystem.AddCelestialBody(styx);
 
 var orderedCelestialBodies = solarSystem.CelestialBodies.OrderBy(c => c.OrbitalPeriodInDays);
+Console.WriteLine("********* All Celestial Bodies Ordered by Orbital Period In Days *********");
 foreach (var item in orderedCelestialBodies)
 {
     Console.WriteLine(item.Name);
